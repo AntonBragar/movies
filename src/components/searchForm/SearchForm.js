@@ -44,7 +44,6 @@ const SearchForm = () => {
                     <Button
                         variant="contained"
                         type="submit"
-                        // style={{marginLeft: 10}}
                         >
                         <SearchIcon fontSize="large"/>
                     </Button>

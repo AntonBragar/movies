@@ -5,7 +5,6 @@ const favoriteSlice = createSlice({
     initialState: [],
     reducers: {
         addToFavorites(state, {payload}) {
-            // state = [...state, payload]
             state.push(payload);
             localStorage.setItem("favorites", JSON.stringify(state));
         },

@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import TendingMovies from "./TendingMovies";
-import {withRouter} from "react-router-dom";
 import CustomPagination from "../../components/pagination/CustomPagination";
 import {Button} from "@mui/material";
 import MovieList from "../../components/movie/movie-list/MovieList";
@@ -44,12 +42,10 @@ const HomiePage = () => {
                     Show Movies
                 </Button>
             </div>
-            {/*<button onClick={showMovies}>Show Data</button>*/}
-            {/*{show ? <TendingMovies movies={movies}/> : null}*/}
             {show ? <MovieList movies={movies}/> : null}
             {show ? <CustomPagination setPage={setPage} numOfPages={numOfPages}/> : null}
         </>
     );
 };
 
-export default withRouter(HomiePage);
+export default HomiePage;
