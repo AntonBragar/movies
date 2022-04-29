@@ -1,0 +1,26 @@
+.searchBox {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+.searchBox input {
+    background-color: #F0F8FF;
+    border-radius: 4px 0 0 4px;
+}
+
+.SearchForm {
+    display: flex;
+    justify-content: center;
+}
+.SearchForm label+div:before {
+    display: none;
+}
+.SearchForm label.MuiInputLabel-shrink{
+    color:#000;
+}
+.SearchForm button{
+    background: #F0F8FF;
+    border-radius: 0 4px 4px 0;
+    box-shadow: none;
+}
